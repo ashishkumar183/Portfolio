@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+/*       Base CSS         */
+/* color
+   green #10b99d
+   sky blue  #0151d6
+   purple #802bb1
+   red #ff4446 
+   cream #ebc399  for texts*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0D111D;
+    color: #FCF8F3;
+    font-size: larger;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    /* background-color: #FBBC01; */
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1,h2{
+    color: #FA8604
+    ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Reusable CSS classes */
+.section__subtitle{
+    display: block;
+    margin-bottom: 4rem;
+}
+.section__subtitle,.section__title{
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Layout */
+.container{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Buttons */
+.button{
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    border-radius: 1rem;
+}
+.button--flex{
+    display: inline-flex;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*            BREAKPOINTS            */
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .container{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .button{
+        padding: 1rem 1.75rem;
+    }
+    .button_icon{
+        width: 22px;
+        height: 22px;
+    }
+    /* .main{
+        font-size: 20rem;
+    } */
+}
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .section{
+        padding: 2rem 0 4rem;
+    }
+    /* body{
+        font-size: medium;
+    } */
+}
+@media screen and (max-width: 576px) {
+    .main{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .container{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .main{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    body{
+        font-size: medium;
+    }
 }
