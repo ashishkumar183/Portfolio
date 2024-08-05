@@ -21,7 +21,7 @@ const Contact = () => {
         <span className="section__subtitle">Contact Me</span>
         <div className="contact_container container grid">
             <div className="contact_content">
-                <h3 className="contact_title">Talk to me</h3>
+                <h3 className="contact_title">Text me</h3>
                 <div className="contact_info">
                     <div className="contact__card">
                         <i className="bx bx-mail-send contact__card-icon"></i>
@@ -53,7 +53,7 @@ const Contact = () => {
             </div>
 
             <div className="contact_content">
-                <h3 className="contact_title">Write me your project</h3>
+                <h3 className="contact_title">Write me </h3>
                 <form ref={form} onSubmit={sendEmail} className="contact_form">
                     <div className="contact_form-div">
                         <label className="contact_form-tag">Name</label>
